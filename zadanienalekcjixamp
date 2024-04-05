@@ -78,9 +78,9 @@ INSERT INTO dane_uczniow (id_ucznia, imie_matki, imie_ojca, miejscowosc, kod_poc
 
 
 
-CREATE TABLE numery_lekcji (numer_lekcji INT PRIMARY KEY, godzina_rozpoczecia TIME, godzina_zakonczenia TIME);
+CREATE TABLE id_numery_lekcji (id_numer_lekcji INT PRIMARY KEY, godzina_rozpoczecia TIME, godzina_zakonczenia TIME);
 
-INSERT INTO numery_lekcji (numer_lekcji, godzina_rozpoczecia, godzina_zakonczenia)
+INSERT INTO id_numery_lekcji (id_numer_lekcji, godzina_rozpoczecia, godzina_zakonczenia)
 
 VALUES (1, '06:00', '08:45'), (2, '08:55', '09:40'), (3, '09:50', '10:35'), (4, '10:45', '11:30'), (5, '11:40', '12:25');
   
