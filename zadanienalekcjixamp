@@ -103,4 +103,20 @@ INSERT INTO dni_tygodnia (id_dnia, nazwa_dnia, nazwa_skr_dnia) VALUES
 ('Piątek', 'Piątek', 'Pią'),
 ('Sobota', 'Sobota', 'Sob'),
 ('Niedziela', 'Niedziela',  'Nie')
-  
+
+
+
+nowe
+CREATE TABLE plan_lekcji (
+    id_plan INT AUTO_INCREMENT PRIMARY KEY,
+    id_klasy INT NOT NULL,
+    id_nauczyciela INT NOT NULL,
+    id_przedmiotu INT NOT NULL,
+    id_dnia INT NOT NULL,
+    id_numer_lekcji INT NOT NULL,
+    FOREIGN KEY(id_klasy) REFERENCES klasy(id_klasy),
+    FOREIGN KEY(id_nauczyciela) REFERENCES nauczyciele(id_nauczyciela),
+    FOREIGN KEY(id_przedmiotu) REFERENCES przedmioty(id_przedmiotu),
+    FOREIGN KEY(id_dnia) REFERENCES dni_tygodnia(id_dnia),
+    FOREIGN KEY(id_numer_lekcji) REFERENCES id_numery_lekcji(id_numer_lekcji)
+);
