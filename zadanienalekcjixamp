@@ -120,3 +120,7 @@ CREATE TABLE plan_lekcji (
     FOREIGN KEY(id_dnia) REFERENCES dni_tygodnia(id_dnia),
     FOREIGN KEY(id_numer_lekcji) REFERENCES id_numery_lekcji(id_numer_lekcji)
 );
+
+
+
+https://pastebin.com/3CY9w28K#google_vignette
